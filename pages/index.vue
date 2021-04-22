@@ -1,12 +1,8 @@
 <template>
   <div>
     <v-row>
-      <v-col cols="12" sm="12">
+      <v-col cols="12" sm="12" md="12">
         <Navbar />
-      </v-col>
-    </v-row>
-    <v-row justify="center" align="center">
-      <v-col cols="12" sm="8" md="6">
         <v-card-actions>
           <v-btn color="success" @click="seeFormLogin">
             Se Connecter
@@ -16,6 +12,10 @@
             S'Enregistrer
           </v-btn>
         </v-card-actions>
+      </v-col>
+    </v-row>
+    <v-row justify="center" align="center">
+      <v-col cols="12" sm="8" md="6">
         <v-card v-show="seeLogin">
           <v-card-title>
             <h1 class="display-1">
